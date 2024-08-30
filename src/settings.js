@@ -130,9 +130,9 @@ Settings.prototype.persist = function (callback) {
  @returns Object The setting to be used.
  */
 
- Settings.prototype.get = function (key, def) {
+Settings.prototype.get = function (key, def) {
 	const parts = (key || '').split('.');
-	let obj = this._getValue(this.cfg._, parts);
+	const obj = this._getValue(this.cfg._, parts);
 
 	if (obj === undefined) {
 		def = def !== undefined ? def : this._getValue(this.defCfg, parts);
