@@ -154,30 +154,7 @@ Settings.prototype._getValue = function (obj, parts) {
 	return obj;
 };
 
-// Settings.prototype.get = function (key, def) {
-// 	let obj = this.cfg._;
-// 	const parts = (key || '').split('.');
-// 	let part;
-// 	for (let i = 0; i < parts.length; i += 1) {
-// 		part = parts[i];
-// 		if (part && obj != null) {
-// 			obj = obj[part];
-// 		}
-// 	}
-// 	if (obj === undefined) {
-// 		if (def === undefined) {
-// 			def = this.defCfg;
-// 			for (let j = 0; j < parts.length; j += 1) {
-// 				part = parts[j];
-// 				if (part && def != null) {
-// 					def = def[part];
-// 				}
-// 			}
-// 		}
-// 		return def;
-// 	}
-// 	return obj;
-// };
+
 
 /**
  Returns the settings-wrapper object.
