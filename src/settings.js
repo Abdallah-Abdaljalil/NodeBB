@@ -130,6 +130,7 @@ Settings.prototype.persist = function (callback) {
  @returns Object The setting to be used.
  */
 
+// Used ChatGPT for refactoring
 Settings.prototype.get = function (key, def) {
 	const parts = (key || '').split('.');
 	const obj = this._getValue(this.cfg._, parts);
